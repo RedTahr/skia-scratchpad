@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="skiathings.Views.MainPage"
+						 xmlns:views="clr-namespace:SkiaSharp.Views.Forms;assembly=SkiaSharp.Views.Forms"
+             Title="{Binding Title}">
+
+	<StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+		<Label Text="Welcome to Xamarin Forms and Prism!" />
+		<Grid HeightRequest="200" WidthRequest="200" HorizontalOptions="Center">
+			<views:SKCanvasView PaintSurface="OnPainting" />
+		</Grid>
+		<Grid HeightRequest="200" WidthRequest="200" HorizontalOptions="Center">
+			<views:SKCanvasView PaintSurface="OnTickPainting" />
+		</Grid>
+		<Grid HeightRequest="200" WidthRequest="200" HorizontalOptions="Center">
+			<views:SKCanvasView PaintSurface="OnCrossPainting" />
+			<Button Text="boo" VerticalOptions="End"/>
+		</Grid>
+	</StackLayout>
+
+</ContentPage>
